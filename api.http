@@ -1,0 +1,41 @@
+GET  http://localhost:4000/newToken
+#################################################################
+
+POST http://localhost:4000/user
+Content-Type: application/json
+
+{
+  "user_info": {
+    "email": "dhjdfkghdskjf@fgkjfdlgjfkd.gh",
+    "type": 1,
+    "first_name": "Terry",
+    "last_name": "Jones"
+  }
+}
+#################################################################
+
+GET  http://localhost:4000/meetings
+
+#################################################################
+
+POST http://localhost:4000/meetings
+Content-Type: application/json
+
+{
+  "topic": "test meeting 2",
+  "type":0,
+  ""
+  "timezone": "Asia/Calcutta",
+  "password": "A123B123",
+  "agenda": "Demo test for meetings"
+}
+#################################################################
+
+POST http://localhost:4000/generateSignature
+Content-Type: application/json
+
+{
+  "token":"",
+  "meeting_id":""
+}
+#################################################################
